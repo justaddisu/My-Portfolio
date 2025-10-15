@@ -104,7 +104,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 /* Chips/Filters */
 .filters__spacer{flex:1 1 auto;min-width:12px;}
 .filters { display: flex; gap: .5rem; flex-wrap: wrap; margin-bottom: 1rem; }
-.chip { color: #0F172A; border: 1px solid var(--border); padding: .35rem .75rem; border-radius: 999px; background: transparent; cursor: pointer; }
+.chip { color: #475569; border: 1px solid var(--border); padding: .35rem .75rem; border-radius: 999px; background: transparent; cursor: pointer; }
 .chip.is-active, .chip:hover { background: var(--bg); border-color: var(--primary); color: var(--primary); }
 
 /* Projects */
