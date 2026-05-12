@@ -72,7 +72,7 @@ textarea:focus-visible {
 }
 
 .container {
-  width: min(100% - 2rem, var(--container));
+  width: min(100% - clamp(2.5rem, 6vw, 5rem), var(--container));
   margin-inline: auto;
 }
 
