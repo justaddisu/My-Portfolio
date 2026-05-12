@@ -90,9 +90,10 @@
   const success = document.getElementById("form-success");
   if (form) {
     const fields = ["name", "email", "message"];
-    form.addEventListener("submit", (event) => {
+    form.addEventListener("submit", async (event) => {
       event.preventDefault();
       let isValid = true;
+      const submitBtn = form.querySelector('button[type="submit"]');
 
       fields.forEach((id) => {
         const input = form.querySelector("#" + id);
@@ -111,9 +112,37 @@
         return;
       }
 
-      form.reset();
-      if (success) {
-        success.textContent = "Thanks, your message looks great. I will get back to you soon.";
+      try {
+        if (submitBtn) {
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending...";
+        }
+
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+          headers: {
+            Accept: "application/json"
+          }
+        });
+
+        if (!response.ok) {
+          throw new Error("Unable to send message");
+        }
+
+        form.reset();
+        if (success) {
+          success.textContent = "Message sent successfully. Thank you for reaching out.";
+        }
+      } catch (error) {
+        if (success) {
+          success.textContent = "Message could not be sent right now. Please try again shortly.";
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = "Send";
+        }
       }
     });
   }

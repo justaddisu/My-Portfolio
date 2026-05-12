@@ -345,7 +345,10 @@
           <h2 class="section__title">Contact</h2>
           <p class="section__subtitle">Let's discuss your project.</p>
         </header>
-        <form class="form" id="contact-form" novalidate>
+        <form class="form" id="contact-form" action="https://formsubmit.co/justaddisu@gmail.com" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
           <div class="form__row">
             <label class="form__label" for="name">Name</label>
             <input class="form__control" id="name" name="name" type="text" required autocomplete="name" />
