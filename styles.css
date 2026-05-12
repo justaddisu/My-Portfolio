@@ -28,28 +28,28 @@ h3 {
 :root {
   --container: 1120px;
   --radius: 16px;
-  --bg: #f7f2e9;
-  --ink: #1f2a37;
-  --ink-muted: #4f5d6f;
-  --border: #d7c7ae;
-  --bg-alt: #efe6d7;
-  --primary: #0a8f75;
+  --bg: #ffffff;
+  --ink: #0f1f3d;
+  --ink-muted: #3e5f95;
+  --border: #d7e4ff;
+  --bg-alt: #eef4ff;
+  --primary: #1d63ff;
   --primary-ink: #ffffff;
-  --accent: #ef6c2f;
-  --card: #fffaf1;
-  --shadow: 0 14px 32px rgba(36, 36, 36, 0.08);
+  --accent: #4f8dff;
+  --card: #ffffff;
+  --shadow: 0 14px 32px rgba(20, 67, 170, 0.12);
 }
 
 :root.dark {
-  --bg: #11231f;
-  --ink: #e7f4ef;
-  --ink-muted: #bdd7ce;
-  --border: #2c4f47;
-  --bg-alt: #14312b;
-  --primary: #4cd2b2;
-  --primary-ink: #06261f;
-  --accent: #ffb075;
-  --card: #1b3a34;
+  --bg: #08152f;
+  --ink: #e8f0ff;
+  --ink-muted: #b3c8f0;
+  --border: #224176;
+  --bg-alt: #0d1f44;
+  --primary: #72a0ff;
+  --primary-ink: #0a1c40;
+  --accent: #9fc0ff;
+  --card: #102850;
   --shadow: 0 16px 34px rgba(0, 0, 0, 0.32);
 }
 
@@ -531,7 +531,7 @@ textarea:focus-visible {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
-  background: #dbd0bd;
+  background: #dbe8ff;
 }
 
 .project-card__body {
