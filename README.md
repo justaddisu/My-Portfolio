@@ -77,3 +77,5 @@ You can deploy this project to:
 ## License
 
 Personal portfolio project. Customize and use as needed.
+
+Original work and implementation by Addisu Dessalegn.
