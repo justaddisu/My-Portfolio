@@ -79,3 +79,19 @@ You can deploy this project to:
 Personal portfolio project. Customize and use as needed.
 
 Original work and implementation by Addisu Dessalegn.
+
+## Product Key / Licensing
+
+This project requires a valid product key for licensed usage.
+
+- Product keys are issued privately per project and per deployment.
+- Do not commit product keys to source code, README files, or public repositories.
+- Store product keys only in secure secret managers or private environment files.
+
+To request a product key, contact:
+
+- Name: Addisu Dessalegn
+- Email: justaddisu@gmail.com
+- Phone/WhatsApp: +251 910 170 759
+- LinkedIn: https://www.linkedin.com/in/addisu-dessalegn-6a852b11a/
+- Portfolio: https://justaddisu.github.io/My-Portfolio
